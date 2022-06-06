@@ -67,7 +67,7 @@ def plotScatterMatrix(df, plotSize, textSize):
     plt.suptitle('Scatter and Density Plot')
     plt.show()
 
-nRowsRead = 1000 # specify 'None' if want to read whole file
+nRowsRead = None # specify 'None' if want to read whole file
 # grimms_fairytales.csv may have more rows in reality, but we are only loading/previewing the first 1000 rows
 df1 = pd.read_csv('/content/grimms_fairytales.csv', delimiter=',', nrows = nRowsRead)
 df1.dataframeName = 'grimms_fairytales.csv'
